@@ -1,0 +1,108 @@
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px auto;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-default {
+  display: block;
+  margin: 0 0 10px;
+  padding: 10px 10px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 25px auto;
+}
+
+.send {
+  width: 40%;
+  padding: 15px 0;
+  background: palevioletred;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: rgb(214, 68, 117);
+  transform: scale(1.1);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: palevioletred;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+tfoot {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+  main {
+    width: auto;
+    text-align: center;
+  }
+
+  .input-default {
+    width: 90%;
+    padding: 10px 5px;
+    margin: 15px auto;
+  }
+
+  fieldset legend {
+    padding: 10px 0;
+  }
+
+  fieldset label {
+    text-align: start;
+    margin: 20px 15%;
+  }
+
+  fieldset select {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  .send,
+  select,
+  table {
+    width: 80%;
+  }
+
+  table {
+    margin: 40px 10% 20px;
+  }
+}

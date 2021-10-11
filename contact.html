@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/260d5d7cab.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Contact - Sweet Sophie</title>
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <h1>
+          <img src="/imgs/logo_sweetSophie.png" alt="Logo Sweet Sophie" />
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <!-- <li><a href="">Social medias</a></li> -->
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form action="">
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" class="input-default" required />
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" class="input-default" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          class="input-default"
+          required
+          placeholder="email@domain.com"
+        />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          class="input-default"
+          placeholder="(XXX) XXX-XXXX"
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          name=""
+          id="message"
+          cols="60"
+          rows="10"
+          class="input-default"
+        ></textarea>
+
+        <fieldset>
+          <legend>Preferable contact:</legend>
+          <label for="radio-email">
+            <input type="radio" name="contact" value="email" id="radio-email" />
+            Email
+          </label>
+
+          <label for="radio-phone">
+            <input type="radio" name="contact" value="phone" id="radio-phone" />
+            Phone
+          </label>
+
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              name="contact"
+              value="whatsapp"
+              id="radio-whatsapp"
+              checked
+            />
+            Whatsapp
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Best time for contact:</legend>
+          <select name="" id="">
+            <option value="">Morning</option>
+            <option value="">Afternoon</option>
+            <option value="">Night</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox">
+          <input type="checkbox" checked /> Would like to receive news on your
+          email?
+        </label>
+
+        <input type="submit" value="Send" class="send" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>CLOSED</td>
+          </tr>
+          <tr>
+            <td>Tue - Thu</td>
+            <td>10AM - 4PM</td>
+          </tr>
+          <tr>
+            <td>Fri - Sun</td>
+            <td>10AM - 7PM</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Thank you ❣</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <footer>
+      <div class="social-menu">
+        <ul>
+          <!-- <li>
+            <a href=""><i class="fa fa-facebook"></i></a>
+          </li> -->
+          <li>
+            <a href="https://wa.me/qr/43WOJFGE55DLH1"
+              ><i class="fa fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sweetsophieusa/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.canva.com/design/DAEsSPTV_AQ/X8FOAyo3Ji3QmE34OjGSpQ/view?website#1:cake-in-jar"
+              ><i class="fa fa-calendar-check"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://venmo.com/u/Sweet-SophieUSA"
+              ><i class="fa fa-money-bill-alt"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <img src="imgs/logo_sweetSophie.png" alt="Logo Sweet Sophie" />
+      <p class="copyright">&copy; Copyright Sweet Sophie - 2021</p>
+    </footer>
+  </body>
+</html>
