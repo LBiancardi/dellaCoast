@@ -20,10 +20,10 @@ em {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  color: rgba(112, 38, 8, 1);
+  color: black;
   margin: 1em 0;
   clear: left;
-  text-shadow: 2px 2px pink;
+  text-shadow: 2px 2px lightblue;
 }
 
 .main-title::first-letter {
@@ -46,7 +46,7 @@ em {
   width: 940px;
 }
 
-.baker-utensils {
+.wax-utensils {
   width: 180px;
   float: left;
   margin: 0 20px 20px 0;
@@ -61,7 +61,7 @@ em {
 }
 
 main strong {
-  color: chocolate;
+  color: brown;
 }
 
 /* MAP */
@@ -179,7 +179,7 @@ main strong {
     text-align: center;
   }
 
-  .baker-utensils {
+  .wax-utensils {
     margin-left: 5%;
   }
 
