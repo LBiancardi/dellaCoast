@@ -61,17 +61,22 @@ footer img {
 /* .social-menu ul li:nth-child(1) a:hover {
   background-color: #3b5999; //FACEBOOK
 } */
-.social-menu ul li:nth-child(1) a:hover {
-  background-color: #25d366;
+/* .social-menu ul li:nth-child(1) a:hover {
+  background-color: #25d366; //WHATSAPP
+} */
+.insta-icon:hover {
+  background-color: #e4405f; /* INSTAGRAM */
 }
-.social-menu ul li:nth-child(2) a:hover {
-  background-color: #e4405f;
+.book-icon:hover {
+  background-color: #f1c960; /* BOOK NOW */
 }
-.social-menu ul li:nth-child(3) a:hover {
-  background-color: palevioletred;
+
+.review-icon:hover {
+  background-color: gold; /*REVIEWS */
 }
-.social-menu ul li:nth-child(4) a:hover {
-  background-color: green;
+
+.yelp-icon:hover {
+  background-color: #c41200; /*YELP*/
 }
 
 @media screen and (max-width: 480px) {

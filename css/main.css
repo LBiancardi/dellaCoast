@@ -17,7 +17,7 @@ em {
 }
 
 .bookNow-banner img {
-  width: 30%;
+  width: 35%;
   margin: 5px;
   transition: 400ms;
   opacity: 100%;
@@ -59,7 +59,7 @@ em {
 }
 
 .wax-utensils {
-  width: 180px;
+  width: 200px;
   float: left;
   margin: 0 20px 20px 0;
 }
@@ -73,7 +73,7 @@ em {
 }
 
 main strong {
-  color: #099b7b;
+  color: #057e63;
 }
 
 /* MAP */
@@ -150,7 +150,7 @@ main strong {
   vertical-align: top;
 }
 
-.brigadeiros-image {
+.services-image {
   width: 60%;
   opacity: 100%;
   transition: 400ms;
@@ -158,7 +158,7 @@ main strong {
   /* box-shadow: 10px 10px 30px 20px black, -10px -10px yellow, -20px 20px rgba(255, 0, 0, 0.5); */
 }
 
-.brigadeiros-image:hover {
+.services-image:hover {
   opacity: 80%;
 }
 
@@ -191,13 +191,17 @@ main strong {
     width: auto;
   }
 
-  .brigadeiros-image,
+  .services-image,
   .products-content,
   .video,
   .map iframe,
   .open-hours {
     width: 99%;
     text-align: center;
+  }
+
+  .main-title:last-child {
+    margin: 0;
   }
 
   .wax-utensils {
