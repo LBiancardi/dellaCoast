@@ -1,6 +1,5 @@
 footer {
   text-align: center;
-  /* background: url("https://wallpaperaccess.com/full/1425559.jpg"); */
   background: #86d6c5;
   padding: 40px 0;
 }
@@ -58,12 +57,6 @@ footer img {
 .social-menu ul li a:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
-/* .social-menu ul li:nth-child(1) a:hover {
-  background-color: #3b5999; //FACEBOOK
-} */
-/* .social-menu ul li:nth-child(1) a:hover {
-  background-color: #25d366; //WHATSAPP
-} */
 .insta-icon:hover {
   background-color: #e4405f; /* INSTAGRAM */
 }
@@ -101,4 +94,5 @@ footer img {
   .copyright {
     margin-bottom: 5%;
   }
+
 }

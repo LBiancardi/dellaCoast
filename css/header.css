@@ -36,7 +36,7 @@ header img {
   text-transform: uppercase;
 }
 
-.box nav li:last-of-type {
+.bookNow-header-button {
   background-color: #f1c960;
   padding: 15px;
   border-radius: 20px;
