@@ -37,17 +37,17 @@ header img {
 }
 
 .box nav li:last-of-type {
-  background-color: red;
+  background-color: #ee0f42;
   padding: 15px;
   border-radius: 20px;
 }
 
 .box nav li:last-of-type:hover {
-  background-color: rgba(255, 0, 0, 0.8);
+  opacity: 90%;
 }
 
 .box nav li:last-of-type:active {
-  background-color: rgba(255, 0, 0, 0.6);
+  opacity: 80%;
 }
 
 #banner {
@@ -84,5 +84,9 @@ body {
 
   .box nav a {
     font-size: 16px;
+  }
+
+  .box nav li:last-of-type {
+    display: none;
   }
 }
