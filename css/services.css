@@ -8,45 +8,65 @@ a {
   padding: 50px 0;
 }
 
+h2,
+.bookNow-button,
+.products li {
+  transition: 400ms;
+}
+
 .products li {
   display: inline-block;
   text-align: center;
-  width: 30%;
+  width: 45%;
   vertical-align: top;
-  /* background: #cccccc; */
-  margin: 0 1.5%;
+  margin: 1em 1.5%;
+  text-align: center;
   padding: 30px 20px;
   box-sizing: border-box;
-  border: rgb(99, 52, 19) 4px solid;
+  border: black 3px solid;
   border-radius: 10px;
 }
 
-.products li:hover {
-  border-color: chocolate;
+.products img {
+  padding: 2px 0;
 }
 
-.products li:active {
-  border-color: crimson;
+.products li:hover {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.products li:hover .bookNow-button {
+  font-size: 30px;
+  background-color: #f1c960;
 }
 
 .products li:hover h2 {
-  font-size: 34px;
+  font-size: 32px;
 }
 
 .products h2 {
-  color: rgb(99, 52, 19);
+  color: black;
   font-size: 30px;
   font-weight: bold;
 }
 
 .product-description {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .product-price {
   font-size: 22px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+.bookNow-button {
+  padding: 10px 0px;
+  border: black solid 2px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #d4bdcf;
 }
 
 /* MOBILE RESPONSIVE */
