@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/services.css" />
 
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,20 +37,48 @@
     <header>
       <div class="box">
         <h1>
-          <img src="imgs/DellaCoastLogo.png" alt="Logo Della Coast" />
+          <img class="logoHeader" src="imgs/DellaCoastLogo.png" alt="Logo Della Coast Beauty" />
         </h1>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-              <a href="https://www.vagaro.com/dellacoast/services" class="bookNow-header-button">
-                  BOOK NOW!
-              </a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="services.html"
+                  >Services <span class="sr-only">(current)</span></a
+                >
+              </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact.html"
+                    >Contact <span class="sr-only">(current)</span></a
+                  >
                 </li>
-          </ul>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVCLZw6eyiQ7QVeru2nnFFbChzXUghhypgtcJdRLLaBSHg8SubcENsGkTi5eUw0GNGhEk/T5r0pnd0pny6PqdbFP6yXk3n/0odEgLCouv0lF8z7NpzoG/v89wypd/eYnKVnrmyj0x8A5uMNDZkdejn+tzhSKSyE3cpDzzWpcOXEXkJN3Wrtu3tCVw1WdsrdhQfi2Yu0x1AesGJsEV5Jvuk0m97O3sQcyeg3VKlONRvRTLyskUOzSIIafaj12CDv0mRqt0cCtFwGpyrSm48hcgFMPmb7nnvAbnp+HbnY9cGEwEMVBYgY0cC/7Jq89FxH3i6A=="
+                      >Book now <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -83,16 +119,16 @@
           </li>
         </a>
         <a
-        href="https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVCLZw6eyiQ7QVeru2nnFFbChzXUghhypgtcJdRLLaBSHg8SubcENsGkTi5eUw0GNGhEk/T5r0pnd0pny6PqdbFP6yXk3n/0odEgLCouv0lF8z7NpzoG/v89wypd/eYnKVnrmyj0x8A5uMNDZkdejn+tzhSKSyE3cpDzzWpcOXEXkJN3Wrtu3tCVw1WdsrdhQfi2Yu0x1AesGJsEV5Jvuk0m97O3sQcyeg3VKlONRvRTLyskUOzSIIafaj12CDv0mRqt0cCtFwGpyrSm48hcgFMPmb7nnvAbnp+HbnY9cGEwEMVBYgY0cC/7Jq89FxH3i6A=="
-      >
-        <li>
-          <h2>Eyelashes</h2>
-          <img src="imgs/eyelashes-icon.png" alt="Eyelashes icon" />
-          <p class="product-description">Starting at</p>
-          <p class="product-price">U$ 60.00</p>
-          <p class="bookNow-button">BOOK NOW</p>
-        </li>
-      </a>
+          href="https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVCLZw6eyiQ7QVeru2nnFFbChzXUghhypgtcJdRLLaBSHg8SubcENsGkTi5eUw0GNGhEk/T5r0pnd0pny6PqdbFP6yXk3n/0odEgLCouv0lF8z7NpzoG/v89wypd/eYnKVnrmyj0x8A5uMNDZkdejn+tzhSKSyE3cpDzzWpcOXEXkJN3Wrtu3tCVw1WdsrdhQfi2Yu0x1AesGJsEV5Jvuk0m97O3sQcyeg3VKlONRvRTLyskUOzSIIafaj12CDv0mRqt0cCtFwGpyrSm48hcgFMPmb7nnvAbnp+HbnY9cGEwEMVBYgY0cC/7Jq89FxH3i6A=="
+        >
+          <li>
+            <h2>Eyelashes</h2>
+            <img src="imgs/eyelashes-icon.png" alt="Eyelashes icon" />
+            <p class="product-description">Starting at</p>
+            <p class="product-price">U$ 60.00</p>
+            <p class="bookNow-button">BOOK NOW</p>
+          </li>
+        </a>
       </ul>
     </main>
 
@@ -112,11 +148,7 @@
             ></a>
           </li>
           <li>
-            <a
-              href="#"
-              class="yelp-icon"
-              ><i class="fa fa-yelp"></i
-            ></a>
+            <a href="#" class="yelp-icon"><i class="fa fa-yelp"></i></a>
           </li>
           <li>
             <a
@@ -127,8 +159,11 @@
           </li>
         </ul>
       </div>
-      <img src="imgs/LogoHorizontal.png" alt="Logo Della Coast" />
-      <p class="copyright">&copy; Copyright Della Coast - 2021</p>
+      <img src="imgs/LogoHorizontal.png" alt="Logo Della Coast Beauty" />
+      <p class="copyright">&copy; Copyright Della Coast Beauty - 2021</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
