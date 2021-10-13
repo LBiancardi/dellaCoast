@@ -17,6 +17,10 @@ header {
   height: auto;
 }
 
+#logoMobile {
+  display: none;
+}
+
 .box nav {
   position: absolute;
   top: 50%;
@@ -78,7 +82,11 @@ body {
   }
 
   .logoHeader {
-    width: 30%;
+    width: 35%;
+  }
+
+  #logoMobile {
+    display: none;
   }
 
   .box nav {
@@ -91,11 +99,8 @@ body {
     font-size: 16px;
   }
 
-  button.navbar-light {
-    border: black solid 5px;
+  .box nav li:last-of-type {
+    background-color: #d4bdcf;
+    border: black 1px solid;
   }
-
-  /* .box nav li:last-of-type {
-    display: none;
-  } */
 }
