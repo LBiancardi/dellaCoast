@@ -2,7 +2,7 @@
 
 header {
   position: relative;
-  background: #beece2;
+  background: #86d6c5;
   padding: 10px;
 }
 
@@ -83,10 +83,12 @@ body {
 
   .logoHeader {
     width: 35%;
+    /* display: none; */
   }
 
   #logoMobile {
     display: none;
+    width: 70%;
   }
 
   .box nav {

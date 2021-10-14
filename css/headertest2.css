@@ -12,9 +12,13 @@ header {
   margin: 15px auto;
 }
 
-header img {
+.logoHeader {
   width: 200px;
   height: auto;
+}
+
+#logoMobile {
+  display: none;
 }
 
 .box nav {
@@ -74,6 +78,14 @@ body {
 
   h1 {
     text-align: center;
+  }
+
+  .logoHeader {
+    display: none;
+  }
+
+  #logoMobile {
+    display: inline;
   }
 
   .box nav {
