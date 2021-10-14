@@ -186,6 +186,20 @@ main strong {
   margin: 4em auto;
 }
 
+/* REVIEWS */
+
+#carouselExampleSlidesOnly {
+  margin: 40px auto 0px auto;
+  width: 100%;
+  background-color: #fefefe;
+}
+
+.yelp-review {
+  width: 100%;
+  padding: 0px 7px;
+  margin: 10px auto;
+}
+
 /* MOBILE RESPONSIVE */
 
 @media screen and (max-width: 480px) {
@@ -203,6 +217,10 @@ main strong {
   .open-hours {
     width: 99%;
     text-align: center;
+  }
+
+  .products {
+    width: 95%;
   }
 
   .main-title:last-child {
