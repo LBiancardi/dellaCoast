@@ -131,8 +131,8 @@ main strong {
 
 .products {
   background: #fefefe;
-  padding: 3em 0;
-  width: 95%;
+  padding: 1em 0;
+  width: 80%;
   border: saddlebrown solid 3px;
   border-radius: 10px;
   margin: 0 auto;
@@ -172,13 +172,18 @@ main strong {
   font-weight: bold;
 }
 
-.itens::before {
-  content: "★ ";
+.itens {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
+/* .itens::before {
+  content: "★ ";
+} */
+
 .video {
-  width: 40%;
-  margin: 3em auto;
+  width: 35%;
+  margin: 4em auto;
 }
 
 /* MOBILE RESPONSIVE */

@@ -60,6 +60,9 @@ footer img {
 .insta-icon:hover {
   background-color: #e4405f; /* INSTAGRAM */
 }
+.face-icon:hover {
+  background-color: #4267B2; /* FACEBOOK */
+}
 .book-icon:hover {
   background-color: #f1c960; /* BOOK NOW */
 }
@@ -94,5 +97,4 @@ footer img {
   .copyright {
     margin-bottom: 5%;
   }
-
 }
