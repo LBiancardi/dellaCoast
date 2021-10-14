@@ -48,7 +48,7 @@ header {
 }
 
 .box nav li:last-of-type:hover {
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .box nav li:last-of-type:active {
