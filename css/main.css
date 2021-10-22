@@ -55,7 +55,7 @@ em {
 .about,
 .map {
   margin: 25px auto;
-  width: 90vw;
+  width: 60vw;
 }
 
 .wax-utensils {
@@ -190,7 +190,7 @@ main strong {
 
 #carouselExampleSlidesOnly {
   margin: 40px auto 0px auto;
-  width: 100%;
+  width: 100vw;
   background-color: #fefefe;
 }
 
