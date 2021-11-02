@@ -204,18 +204,22 @@ main strong {
 
 @media screen and (max-width: 480px) {
   .about,
-  .map,
   .video,
-  .products-list {
+  .products-list,
+  .map {
     width: auto;
   }
 
   .services-image,
   .products-content,
   .video,
-  .map iframe,
-  .open-hours {
+  .map iframe {
     width: 99%;
+    text-align: center;
+  }
+
+  .open-hours {
+    width: 90vw;
     text-align: center;
   }
 
