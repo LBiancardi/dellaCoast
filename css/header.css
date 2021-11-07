@@ -17,6 +17,10 @@ header {
   height: auto;
 }
 
+.logoHeader--mobile {
+  display: none;
+}
+
 #logoMobile {
   display: none;
 }
@@ -72,7 +76,8 @@ body {
 
 /* MOBILE RESPONSIVE */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+
   .box {
     width: auto;
   }
@@ -83,12 +88,13 @@ body {
 
   .logoHeader {
     width: 35%;
-    /* display: none; */
+    display: none;
   }
 
-  #logoMobile {
-    display: none;
-    width: 70%;
+  .logoHeader--mobile {
+    display: inline;
+    width: 40%;
+    margin: 0;
   }
 
   .box nav {
