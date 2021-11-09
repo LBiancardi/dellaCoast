@@ -4,7 +4,6 @@ main {
   background: linear-gradient(var(--della--white), var(--light--green));
 }
 
-
 .main__banner #carouselExampleSlidesOnly {
   margin: 0px;
 }
@@ -225,7 +224,7 @@ main {
   flex-direction: column;
   font-weight: bold;
   font-size: 1.3em;
-  height: 600px;
+  min-height: 500px;
   justify-content: space-between;
   margin: 1em 0;
   padding: 1em;
@@ -251,15 +250,16 @@ main {
 }
 
 .itens__image {
-  width: 100%;
+  border-radius: 3%;
   transition: 500ms;
+  width: 100%;
 }
 
 .itens__image:hover {
   opacity: 80%;
 }
 
-.itens__link{
+.itens__link {
   border-radius: 10px;
   background-color: var(--light--pink);
   font-weight: 500;
@@ -274,10 +274,16 @@ main {
   font-weight: bold;
 }
 
-.itens__info.active {
-  text-align: left;
+.itens__description {
+  display: none;
+}
+
+.itens__description.active {
+  display: block;
   font-weight: 300;
   font-size: 16px;
+  margin-top: 1.25em;
+  text-align: left;
   text-decoration: none;
 }
 
@@ -317,6 +323,24 @@ main {
   margin-top: 0;
 }
 
+/* TABLET RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  .cta__message {
+    font-size: 1.5em;
+    letter-spacing: normal;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .itens {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 /* MOBILE RESPONSIVE */
 
 @media screen and (max-width: 480px) {
@@ -339,10 +363,18 @@ main {
     margin: 0.285rem;
   }
 
+  .about {
+    margin-top: 1.25rem;
+  }
+
   .about__text .main-title {
     margin: 1.25em auto;
     font-size: 1.3em;
     text-align: left;
+  }
+
+  .wax-utensils {
+    margin: 0;
   }
 
   .about,
@@ -381,6 +413,10 @@ main {
 
   .about {
     flex-direction: column;
+  }
+
+  .our__services .main-title {
+    font-size: 1.5em;
   }
 
   .my-map,

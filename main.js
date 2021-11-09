@@ -1,3 +1,5 @@
 function show_info() {
-  console.log("I am being called");
+  const itens__description = document.querySelector("#itens__description");
+
+  itens__description.classList.toggle("active");
 }
