@@ -4,6 +4,7 @@ main {
   background: linear-gradient(var(--della--white), var(--light--green));
 }
 
+
 .main__banner #carouselExampleSlidesOnly {
   margin: 0px;
 }
@@ -234,8 +235,17 @@ main {
   /* text-align: center; */
 }
 
+.description__box {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+}
+
 .itens__title {
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   font-size: 1.2em;
 }
 
@@ -255,6 +265,7 @@ main {
   cursor: pointer;
   padding: 1rem;
   transition: 0.3s;
+  width: 50%;
 }
 
 .itens__link:hover {
@@ -279,10 +290,6 @@ main {
 }
 
 /* REVIEWS */
-
-.Header {
-  display: none !important;
-}
 
 .title__reviews {
   font-size: 2.5em;
@@ -396,6 +403,7 @@ main {
   }
 
   .itens {
+    border-radius: 8px;
     width: 95%;
   }
 
