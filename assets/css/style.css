@@ -6,7 +6,7 @@
   --darker--green: #2bcba7;
   --della--yellow: #f1c960;
   --light--pink: #d4bdcf;
-  --della--black: #113;
+  --della--black: #111;
   --header--hover: rgba(0, 0, 0, 0.432);
   --della--white: #fefefe;
 
@@ -19,4 +19,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--body-font);
+}
+
+.container {
+  width: 90%;
 }

@@ -9,11 +9,12 @@ header {
 .box {
   position: relative;
   width: 90%;
-  margin: 15px auto;
+  margin: 25px auto;
+  border-bottom: 2px solid var(--header--hover);
 }
 
 .logoHeader {
-  width: 8rem;
+  width: 10rem;
   height: auto;
 }
 
@@ -40,7 +41,7 @@ header {
   text-transform: lowercase;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
   color: var(--header--hover) !important;
   text-decoration: underline;
 }
@@ -74,14 +75,10 @@ header {
 @media screen and (max-width: 768px) {
   .box {
     width: auto;
-  }
-
-  h1 {
-    text-align: center;
+    border-bottom: none;
   }
 
   .logoHeader {
-    width: 35%;
     display: none;
   }
 
@@ -97,7 +94,11 @@ header {
     margin: 0 auto;
   }
 
-  .box nav a {
+  #navbarSupportedContent {
+    padding-top: 2rem;
+  }
+
+  .nav-link {
     font-size: 16px;
   }
 
