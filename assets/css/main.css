@@ -297,6 +297,11 @@ main {
   background-color: #fefefe;
 }
 
+.carousel-item p {
+  font-size: 30px;
+  text-align: center;
+}
+
 .yelp-review {
   width: 100%;
   padding: 0px 7px;
