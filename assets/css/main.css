@@ -4,15 +4,6 @@ main {
   background: linear-gradient(var(--della--white), var(--light--green));
 }
 
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
-
 .main__banner #carouselExampleSlidesOnly {
   margin: 0px;
 }
@@ -33,7 +24,7 @@ em {
 
 .cta__message {
   color: var(--della--black);
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 120px;
   letter-spacing: 0.75rem;
@@ -85,9 +76,8 @@ em {
   font-size: 2em;
   font-weight: bold;
   color: black;
-  margin: 1em 0;
-  clear: left;
-  text-shadow: 2px 2px lightblue;
+  /* clear: left; */
+  /* text-shadow: 2px 2px lightblue; */
 }
 
 .main-title::first-letter {
@@ -103,35 +93,52 @@ em {
 } */
 
 /* ABOUT */
-
-.about,
-.map {
-  margin: 25px auto;
-  /* width: 60vw; */
+.about {
+  margin: 5rem auto;
+  display: flex;
 }
 
 .wax-utensils {
-  width: 200px;
+  width: 100%;
   float: left;
   margin: 0 20px 20px 0;
 }
 
+.about__text {
+  margin: 0 1.25rem;
+}
+
+.about__text .main-title {
+  text-align: left;
+  font-weight: 300;
+}
+
+.welcome {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
 .about p {
-  margin: 1em;
+  margin: 1em auto;
 }
 
-#mission {
-  font-size: 22px;
+.mission {
+  font-size: 1em;
 }
 
-main strong {
-  color: #057e63;
+.mission__highlight {
+  color: var(--darker--green);
+  font-weight: 700;
 }
 
 /* MAP */
 
+.map {
+  margin: 2em auto;
+}
+
 .my-map {
-  padding: 3em 0;
+  padding-bottom: 5em;
 }
 
 .map iframe {
@@ -154,7 +161,7 @@ main strong {
 
 .open-hours {
   width: 35%;
-  margin-left: 15px;
+  margin-left: 1.5rem;
   display: inline-block;
   vertical-align: top;
 }
@@ -179,54 +186,87 @@ main strong {
   font-size: 14px;
 }
 
-/* PRODUCTS */
+/* SERVICES */
+
+.our__services .main-title {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
 
 .products {
-  background: #fefefe;
-  padding: 1em 0;
-  width: 80%;
-  border: saddlebrown solid 3px;
-  border-radius: 10px;
+  /* background: #fefefe; */
+  /* padding: 0.5em 0; */
+  width: 95%;
+  /* border: saddlebrown solid 3px; */
+  /* border-radius: 10px; */
   margin: 0 auto;
-  box-shadow: inset 0 0 75px lightblue;
+  /* box-shadow: inset 0 0 75px lightblue; */
 }
 
 .products-content {
-  width: 55%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .products-list {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
-.services-image {
-  width: 60%;
-  opacity: 100%;
-  transition: 400ms;
-  box-shadow: 10px 10px 30px 0px black;
-  /* box-shadow: 10px 10px 30px 20px black, -10px -10px yellow, -20px 20px rgba(255, 0, 0, 0.5); */
+.itens {
+  align-items: center;
+  background-color: #fefefe;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 2px solid var(--della--green);
+  /* border-radius: 10px; */
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.3em;
+  height: 500px;
+  justify-content: space-between;
+  margin: 1em 0;
+  padding: 1em;
+  width: 20%;
+  /* text-align: center; */
 }
 
-.services-image:hover {
+.itens__title {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.itens__image {
+  width: 100%;
+  transition: 500ms;
+}
+
+.itens__image:hover {
   opacity: 80%;
 }
 
-.itens {
-  font-size: 1.1em;
-  line-height: 1.5;
+.itens__link{
+  border-radius: 10px;
+  background-color: var(--light--pink);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.3s;
 }
 
-.itens:first-child {
-  font-size: 1.3em;
+.itens__link:hover {
+  background-color: var(--light--green);
   font-weight: bold;
 }
 
-.itens {
-  font-size: 1.3em;
-  font-weight: bold;
+.itens__info.active {
+  text-align: left;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 /* .itens::before {
@@ -240,6 +280,17 @@ main strong {
 
 /* REVIEWS */
 
+.Header {
+  display: none !important;
+}
+
+.title__reviews {
+  font-size: 2.5em;
+  font-weight: 300;
+  padding: 2em 0;
+  text-align: center;
+}
+
 #carouselExampleSlidesOnly {
   margin: 40px auto 0px auto;
   width: 100vw;
@@ -249,7 +300,8 @@ main strong {
 .yelp-review {
   width: 100%;
   padding: 0px 7px;
-  margin: 10px auto;
+  margin: 6rem auto;
+  margin-top: 0;
 }
 
 /* MOBILE RESPONSIVE */
@@ -274,6 +326,12 @@ main strong {
     margin: 0.285rem;
   }
 
+  .about__text .main-title {
+    margin: 1.25em auto;
+    font-size: 1.3em;
+    text-align: left;
+  }
+
   .about,
   .video,
   .products-list,
@@ -290,8 +348,14 @@ main strong {
   }
 
   .open-hours {
-    width: 90vw;
+    margin-left: 0;
+    margin-bottom: 0;
     text-align: center;
+    width: 90vw;
+  }
+
+  .open-hours ul {
+    margin-bottom: 0;
   }
 
   .products {
@@ -302,8 +366,8 @@ main strong {
     margin: 0;
   }
 
-  .wax-utensils {
-    margin-left: 5%;
+  .about {
+    flex-direction: column;
   }
 
   .my-map,
@@ -321,10 +385,17 @@ main strong {
     box-shadow: none;
   }
 
-  .bookNow-banner img {
-    width: 100%;
-    margin: 0px;
-    box-shadow: none;
+  .products-list {
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .itens {
+    width: 95%;
+  }
+
+  .itens__image {
+    width: 95%;
   }
 }
 /* .itens:nth-child(2n) {
