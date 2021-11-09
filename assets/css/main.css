@@ -12,15 +12,22 @@ em {
   font-style: italic;
 }
 
+
 .main__banner #carouselExampleSlidesOnly {
   margin: 0px;
+}
+
+.banner__link:hover {
+  text-decoration: none;
 }
 
 .call__toAction {
   align-content: center;
   background-color: var(--della--white);
   border: 5px solid var(--light--pink);
+  border-radius: 10px;
   display: flex;
+  margin: 5px;
   justify-content: space-evenly;
 }
 
@@ -100,7 +107,7 @@ em {
 .about,
 .map {
   margin: 25px auto;
-  width: 60vw;
+  /* width: 60vw; */
 }
 
 .wax-utensils {
