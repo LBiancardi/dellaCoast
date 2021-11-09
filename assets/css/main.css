@@ -1,7 +1,7 @@
 /* BODY */
 main {
   position: relative;
-  background: linear-gradient(#fefefe, #86d6c5);
+  background: linear-gradient(var(--della--white), var(--light--green));
 }
 
 strong {

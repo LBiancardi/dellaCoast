@@ -2,7 +2,7 @@
 
 header {
   position: relative;
-  background: #86d6c5;
+  background: var(--light--green);
   padding: 10px;
 }
 
@@ -31,21 +31,23 @@ header {
   right: 0px;
 }
 
-.box nav li {
-  display: inline;
-  /* margin: 0px 0px 0px 30px; */
-  padding: 0 10px;
-}
-
 .nav-item {
-  text-decoration: none;
-  font-weight: 500;
+  display: inline;
   font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  text-decoration: none;
   text-transform: lowercase;
 }
 
+.nav-item .nav-link:hover{
+  color: var(--header--hover) !important;
+  text-decoration: underline;
+}
+
 .nav-link {
-  color: black !important;
+  color: var(--della--black) !important;
+  transition: 0.5s;
 }
 
 .active {
@@ -53,33 +55,18 @@ header {
   text-decoration: underline;
 }
 
-.box nav li:last-of-type {
-  background-color: #f8c84e;
+.btn--book {
+  background-color: var(--della--yellow);
   border-radius: 7px;
   transition: 0.5s;
 }
 
-.box nav li:last-of-type:hover {
-  opacity: 70%;
+.btn--book:hover {
+  opacity: 90%;
 }
 
-.box nav li:last-of-type:active {
+.btn--book:active {
   opacity: 60%;
-}
-
-#banner {
-  display: block;
-  width: 100%;
-}
-
-.nav-item:hover {
-  color: rgba(0, 0, 0, 0.747);
-  text-decoration: underline;
-}
-
-/* BODY */
-body {
-  font-family: "Montserrat", sans-serif;
 }
 
 /* MOBILE RESPONSIVE */
@@ -115,7 +102,7 @@ body {
   }
 
   .box nav li:last-of-type {
-    background-color: #d4bdcf;
+    background-color: var(--light--pink);
     border: black 1px solid;
   }
 }
