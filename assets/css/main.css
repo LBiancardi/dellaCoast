@@ -221,18 +221,15 @@ main {
   background-color: #fefefe;
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: 2px solid var(--della--green);
-  /* border-radius: 10px; */
-  /* background-color: tomato; */
   display: flex;
   flex-direction: column;
   font-weight: bold;
   font-size: 1.3em;
-  height: 500px;
+  height: 600px;
   justify-content: space-between;
   margin: 1em 0;
   padding: 1em;
   width: 20%;
-  /* text-align: center; */
 }
 
 .description__box {
@@ -245,8 +242,12 @@ main {
 }
 
 .itens__title {
-  /* margin-bottom: 1em; */
   font-size: 1.2em;
+}
+
+.itens img {
+  height: 100%;
+  width: auto;
 }
 
 .itens__image {
