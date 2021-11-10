@@ -209,6 +209,7 @@ main {
 }
 
 .products-list {
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -219,13 +220,12 @@ main {
   align-items: center;
   background-color: #fefefe;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  outline: 2px solid var(--della--green);
   display: flex;
   flex-direction: column;
   font-weight: bold;
   font-size: 1.3em;
   min-height: 500px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 1em 0;
   padding: 1em;
   width: 20%;
@@ -253,6 +253,7 @@ main {
   border-radius: 3%;
   transition: 500ms;
   width: 100%;
+  max-width: 200px;
 }
 
 .itens__image:hover {
@@ -266,7 +267,7 @@ main {
   cursor: pointer;
   padding: 1rem;
   transition: 0.3s;
-  width: 70%;
+  width: 80%;
 }
 
 .itens__link:hover {
@@ -278,14 +279,41 @@ main {
   display: none;
 }
 
-.itens__description.active {
+.itens.active {
+  text-decoration: none;
+  border: 2px solid var(--della--green);
+  border-radius: 5px;
+}
+
+.itens.active .itens__link {
+  font-size: 16px;
+  height: 50%;
+  padding: 0.5em;
+  width: 50%;
+}
+
+.itens__description li {
+  line-height: 1.75em;
+  list-style:decimal;
+  margin: 0.5em;
+}
+
+.itens.active .itens__description{
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 1.25em;
+  text-align: left;
+}
+
+/* .itens__description.active {
   display: block;
   font-weight: 300;
   font-size: 16px;
   margin-top: 1.25em;
   text-align: left;
   text-decoration: none;
-}
+} */
 
 /* .itens::before {
   content: "★ ";
@@ -338,6 +366,10 @@ main {
   .itens {
     width: 50%;
     margin: 0 auto;
+  }
+
+  .itens__link {
+    font-size: 1em;
   }
 }
 
@@ -446,6 +478,10 @@ main {
 
   .itens__image {
     width: 95%;
+  }
+
+  .itens__description {
+    padding: 0.7em 1.5em;
   }
 }
 /* .itens:nth-child(2n) {
