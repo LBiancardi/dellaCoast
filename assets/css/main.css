@@ -76,21 +76,7 @@ main {
   font-size: 2em;
   font-weight: bold;
   color: black;
-  /* clear: left; */
-  /* text-shadow: 2px 2px lightblue; */
 }
-
-.main-title::first-letter {
-  font-weight: bold;
-}
-
-/* .main-title::before {
-  content: "[ ";
-}
-
-.main-title::after {
-  content: " ]";
-} */
 
 /* ABOUT */
 .about {
@@ -111,6 +97,7 @@ main {
 .about__text .main-title {
   text-align: left;
   font-weight: 300;
+  font-size: 1.25em;
 }
 
 .welcome {
@@ -129,6 +116,12 @@ main {
 .mission__highlight {
   color: var(--darker--green);
   font-weight: 700;
+}
+
+.intro__link .cta__btn {
+  background-color: var(--della--yellow);
+  font-size: 0.8em;
+  margin: 0;
 }
 
 /* MAP */

@@ -29,3 +29,7 @@ button {
 .container {
   width: 80%;
 }
+
+strong {
+  font-weight: bold;
+}
