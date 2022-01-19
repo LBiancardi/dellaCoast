@@ -5,6 +5,7 @@ main {
 }
 
 .main__banner #carouselExampleSlidesOnly {
+  background-color: var(--light--green);
   margin: 0px;
 }
 
@@ -13,30 +14,23 @@ main {
 }
 
 .call__toAction {
-  align-content: center;
+  align-items: center;
   background-color: var(--della--white);
   border: 5px solid var(--light--pink);
   border-radius: 10px;
   display: flex;
-  margin: 5px;
+  flex-wrap: wrap;
+  margin: 5px auto;
   justify-content: space-evenly;
+  width: 80%;
 }
 
 .cta__message {
   color: var(--della--black);
   font-size: 2em;
   font-weight: 700;
-  line-height: 120px;
-  letter-spacing: 0.75rem;
-  margin-bottom: 0;
-  margin: 0 5%;
-  text-align: left;
-  transition: 0.5s;
+  height: auto;
   width: auto;
-}
-
-.cta__message:hover {
-  opacity: 70%;
 }
 
 .cta__btn {
@@ -53,22 +47,11 @@ main {
 .cta__btn:hover {
   cursor: pointer;
   color: var(--della--white);
+  opacity: 70%;
 }
 
 .banner {
   width: 100%;
-}
-
-.bookNow-banner img {
-  width: 35%;
-  margin: 5px;
-  transition: 400ms;
-  opacity: 100%;
-  box-shadow: 5px 5px 20px 0px black;
-}
-
-.bookNow-banner img:hover {
-  opacity: 80%;
 }
 
 .main-title {
@@ -80,14 +63,19 @@ main {
 
 /* ABOUT */
 .about {
+  align-items: flex-start;
   margin: 5rem auto;
   display: flex;
 }
 
+.about__title {
+  margin-top: 3rem;
+}
+
 .wax-utensils {
-  width: 100%;
   float: left;
   margin: 0 20px 20px 0;
+  width: 100%;
 }
 
 .about__text {
@@ -213,15 +201,16 @@ main {
   align-items: center;
   background-color: #fefefe;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   font-weight: bold;
   font-size: 1.3em;
   min-height: 500px;
-  justify-content: space-evenly;
-  margin: 1em 0;
-  padding: 1em;
-  width: 20%;
+  justify-content: space-around;
+  margin: 1rem 0.2rem;
+  padding: 0.5em;
+  width: 24%;
 }
 
 .description__box {
@@ -234,19 +223,15 @@ main {
 }
 
 .itens__title {
-  font-size: 1.2em;
-}
-
-.itens img {
-  height: 100%;
-  width: auto;
+  font-size: 0.985em;
 }
 
 .itens__image {
   border-radius: 3%;
   transition: 500ms;
+  margin-bottom: 1rem;
   width: 100%;
-  max-width: 200px;
+  max-width: 100%;
 }
 
 .itens__image:hover {
@@ -260,7 +245,7 @@ main {
   cursor: pointer;
   padding: 1rem;
   transition: 0.3s;
-  width: 80%;
+  width: 95%;
 }
 
 .itens__link:hover {
@@ -287,11 +272,11 @@ main {
 
 .itens__description li {
   line-height: 1.75em;
-  list-style:decimal;
+  list-style: decimal;
   margin: 0.5em;
 }
 
-.itens.active .itens__description{
+.itens.active .itens__description {
   display: block;
   font-weight: 300;
   font-size: 16px;
@@ -346,9 +331,16 @@ main {
 
 /* TABLET RESPONSIVE */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .container {
+    width: 98%;
+  }
+  .call__toAction {
+    width: 98%;
+  }
+
   .cta__message {
-    font-size: 1.5em;
+    font-size: 1.2em;
     letter-spacing: normal;
   }
 
@@ -357,8 +349,8 @@ main {
   }
 
   .itens {
-    width: 50%;
-    margin: 0 auto;
+    width: 49.5%;
+    margin: 0.25rem auto;
   }
 
   .itens__link {
@@ -384,7 +376,7 @@ main {
   }
 
   .cta__btn {
-    font-size: 1rem;
+    font-size: 0.785rem;
     margin: 0.285rem;
   }
 
@@ -464,13 +456,18 @@ main {
     flex-direction: column;
   }
 
+  .products-list li {
+    margin: 0.25rem 0;
+  }
+
   .itens {
     border-radius: 8px;
     width: 95%;
   }
 
   .itens__image {
-    width: 95%;
+    max-width: none;
+    width: 100%;
   }
 
   .itens__description {

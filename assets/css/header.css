@@ -7,14 +7,16 @@ header {
 }
 
 .box {
-  position: relative;
-  width: 90%;
-  margin: 25px auto;
+  align-items: center;
   border-bottom: 2px solid var(--header--hover);
+  display: flex;
+  margin: 25px auto;
+  justify-content: space-between;
+  width: 98%;
 }
 
 .logoHeader {
-  width: 10rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -24,12 +26,6 @@ header {
 
 #logoMobile {
   display: none;
-}
-
-.box nav {
-  position: absolute;
-  top: 50%;
-  right: 0px;
 }
 
 .nav-item {

@@ -110,14 +110,15 @@
         </div>
       </a>
     </div>
-<!-- testing push -->
 
-      <section class="about container">
-        <img
-          class="wax-utensils"
-          src="assets/imgs/wax-utensils.jpg"
-          alt="Wax utensils"
-        />
+      <div class="about container">
+        <div class="wax-utensils">
+          <img
+            class="wax-utensils"
+            src="assets/imgs/wax-utensils.jpg"
+            alt="Wax utensils"
+          />
+        </div>
         <div class="about__text">
           <h4 class="main-title">If you are the type of woman who loves to enhance your beauty in a natural way, <span class="welcome">welcome to Della Coast!</span></h4>
           <p>
@@ -142,30 +143,31 @@
           <button type="button" class="cta__btn" action="index.html">Book now</button>
         </a>
         </div>
-      </section>
+      </div>
 
       <div class="our__services">
         <h3 class="main-title">Check out our Services</h3>
         <section class="products">
   
           <div class="products-content">
-            <ul class="products-list">
-              <li id="b1" class="itens">
-                <img src="assets/imgs/waxing-service.jpg" class="itens__image" alt="Waxing service"/>
-                <div class="description__box">
-                  <span class="itens__title">Waxing</span>
-                  <button class="itens__link" value="0" onclick="show_info(value)">Learn more</button>
+            <div class="products-list">
+                <div id="b1" class="products__card itens">
+                  <img src="assets/imgs/waxing-service.jpg" class="itens__image" alt="Waxing service"/>
+                  <div class="description__box">
+                    <span class="itens__title">Waxing</span>
+                    <button class="itens__link" value="0" onclick="show_info(value)">Learn more</button>
+                  </div>
+                  <ol class="itens__description" type="1">
+                    <h3>Benefits of waxing</h3>
+                    <li>Waxing makes the skin smoother;</li>
+                    <li>Waxing removes the hair through the root;</li>
+                    <li>Waxing causes less hair to grow, and start to grow thinner;</li>
+                    <li>Removes dead skin cells;</li>
+                    <li>Does not cause skin blemishes.</li>
+                  </ol>
                 </div>
-                <ol class="itens__description" type="1">
-                  <h3>Benefits of waxing</h3>
-                  <li>Waxing makes the skin smoother;</li>
-                  <li>Waxing removes the hair through the root;</li>
-                  <li>Waxing causes less hair to grow, and start to grow thinner;</li>
-                  <li>Removes dead skin cells;</li>
-                  <li>Does not cause skin blemishes.</li>
-                </ol>
-              </li>
-              <li id="b2" class="itens">
+
+              <div id="b2" class="products__card itens">
                 <img src="assets/imgs/facial-service.jpg" class="itens__image" alt="Facials treatment service"/>
                 <div class="description__box">
                   <span class="itens__title">Skincare</span> 
@@ -179,8 +181,9 @@
                   <li>Removes dead skin cells;</li>
                   <li>Does not cause skin blemishes.</li>
                 </ol>
-              </li>
-              <li id="b3" class="itens">
+              </div>
+
+              <div id="b3" class="products__card itens">
                 <img src="assets/imgs/eyelashe-service.jpg" class="itens__image" alt="Eyelashes service"/>
                 <div class="description__box">
                   <span class="itens__title">Eyelashes</span> 
@@ -194,8 +197,9 @@
                   <li>Removes dead skin cells;</li>
                   <li>Does not cause skin blemishes.</li>
                 </ol>
-              </li>
-              <li id="b4" class="itens">
+              </div>
+              
+              <div id="b4" class="products__card itens">
                 <img src="assets/imgs/Microblading-service.jpg" class="itens__image" alt="Permanent makeup service"/>
                 <div class="description__box">
                   <span class="itens__title">Microblading</span> 
@@ -207,9 +211,11 @@
                   <li>Rest assured, here at Della Coast we evaluate all the INDIVIDUAL characteristics of each client, including the tone of their natural threads to reach the most suitable shade for you.</li>
                   <li>It doesn't matter if your hair is blond or dark brown: we have the right shade for everyone</li>
                 </ol>
-              </li>
-            </ul>
+              </div>
+
+            </div>
           </div>
+
           <div class="my-map">
             <section class="map container">
               <h3 class="main-title">Our Location</h3>

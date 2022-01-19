@@ -27,7 +27,11 @@ button {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
+}
+
+#carouselExampleSlidesOnly {
+  width: 100%!important;
 }
 
 strong {
