@@ -21,6 +21,10 @@ form legend {
   width: 50%;
 }
 
+.message-field {
+  padding-bottom: 10rem;
+}
+
 .checkbox {
   margin: 25px auto;
 }
