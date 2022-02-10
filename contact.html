@@ -100,17 +100,18 @@
       <form action="https://formsubmit.co/dellacoastt@gmail.com"
         method="POST">
         <label for="fname">First name: 
-          <input type="text" id="fname" class="input-default" placeholder="First Name" required />
+          <input type="text" name="fname" id="fname" class="input-default" placeholder="First Name" required />
         </label>
         
         <label for="lname">Last name: 
-          <input type="text" id="lname" class="input-default" placeholder="Last Name" required />
+          <input type="text"  name="lname" id="lname" class="input-default" placeholder="Last Name" required />
         </label>
         
 
         <label for="email">Email:</label>
         <input
           type="email"
+          name="email"
           id="email"
           class="input-default"
           required
@@ -120,6 +121,7 @@
         <label for="phone">Phone:</label>
         <input
           type="tel"
+          name="phone"
           id="phone"
           class="input-default"
           placeholder="(XXX) XXX-XXXX"
@@ -127,7 +129,8 @@
 
         <label for="message">Message:</label>
         <input
-          name=""
+        type="text"
+          name="message"
           id="message"
           placeholder="Message..."
           class="input-default message-field"
@@ -158,8 +161,8 @@
         </fieldset>
 
         <fieldset>
-          <legend>Best time for contact:</legend>
-          <select name="" id="">
+          <legend for="best-time">Best time for contact:</legend>
+          <select name="best-time" id="best-time">
             <option value="">Morning</option>
             <option value="">Afternoon</option>
             <option value="">Night</option>
@@ -167,7 +170,7 @@
         </fieldset>
 
         <label class="checkbox">
-          <input type="checkbox" checked /> Would like to receive news on your
+          <input name="subscribe" type="checkbox" checked /> Would like to receive news on your
           email?
         </label>
 
